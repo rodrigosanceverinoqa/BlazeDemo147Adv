@@ -1,0 +1,657 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "compra-de-passagem;compra-com-sucesso",
+        "keyword": "Cenario",
+        "line": 4,
+        "name": "Compra com Sucesso",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 5,
+            "name": "que estou no site Blazedemo",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 6,
+            "name": "seleciono a origem como \"São Paolo\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 7,
+            "name": "o destino como \"London\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 8,
+            "name": "clico no botão \"Find Flights\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 9,
+            "name": "verifico o texto \"Flights from São Paolo to london\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "se a URL contem \"reserve\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 11,
+            "name": "seleciono o voo \"9696\" da compania \"Aer Lingus\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 12,
+            "name": "verifico se a URL contem \"purchase\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 13,
+            "name": "preencho o nome como \"Charlie Brown\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 14,
+            "name": "seleciono a bandeira do cartao como \"Amex\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 15,
+            "name": "marco a opcao \"Remember me\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 16,
+            "name": "clico no botao \"Pruchase Flight\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 17,
+            "name": "verifico se a url contem \"confirmation\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 18,
+            "name": "se exibe a mensagem de agredecimento \"Thank you for your purchase today!\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 19,
+            "name": "se contém a informação \"Amount\" como \"555 USD\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "compra-de-passagem;compra-com-sucesso-ddt",
+        "keyword": "Cenario",
+        "line": 40,
+        "name": "Compra com sucesso DDT",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 22,
+            "name": "que estou no site Blazedemo",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 23,
+            "name": "seleciono a origem como \"São Paolo\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 24,
+            "name": "o destino como \"London\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 25,
+            "name": "clico no botão \"Find Flights\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 26,
+            "name": "verifico o texto \"Flights from \"São Paolo\" to \"London\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 27,
+            "name": "se a URL contem \"reserve\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 28,
+            "name": "seleciono o voo \"9696\" da compania \"Aer Lingus\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 29,
+            "name": "verifico se a URL contem \"purchase\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 30,
+            "name": "preencho o nome como \"Charlie Brown\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 31,
+            "name": "seleciono a bandeira do cartao como \"Visa\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 32,
+            "name": "marco a opcao \"Remember me\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 33,
+            "name": "clico no botao \"Pruchase Flight\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 34,
+            "name": "verifico se a url contem \"confirmation\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 35,
+            "name": "se exibe a mensagem de agredecimento \"Thank you for your purchase today!\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 36,
+            "name": "se contém a informação \"Amount\" como \"555 USD\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "compra-de-passagem;compra-com-sucesso-ddt",
+        "keyword": "Cenario",
+        "line": 41,
+        "name": "Compra com sucesso DDT",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 22,
+            "name": "que estou no site Blazedemo",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 23,
+            "name": "seleciono a origem como \"Portland\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 24,
+            "name": "o destino como \"Dublin\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 25,
+            "name": "clico no botão \"Find Flights\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 26,
+            "name": "verifico o texto \"Flights from \"Portland\" to \"Dublin\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 27,
+            "name": "se a URL contem \"reserve\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 28,
+            "name": "seleciono o voo \"12\" da compania \"Virgin America\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 29,
+            "name": "verifico se a URL contem \"purchase\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 30,
+            "name": "preencho o nome como \"Harry Potter\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 31,
+            "name": "seleciono a bandeira do cartao como \"American Express\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 32,
+            "name": "marco a opcao \"Remember me\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 33,
+            "name": "clico no botao \"Pruchase Flight\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 34,
+            "name": "verifico se a url contem \"confirmation\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 35,
+            "name": "se exibe a mensagem de agredecimento \"Thank you for your purchase today!\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 36,
+            "name": "se contém a informação \"Amount\" como \"555 USD\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "compra-de-passagem;compra-com-sucesso-ddt",
+        "keyword": "Cenario",
+        "line": 42,
+        "name": "Compra com sucesso DDT",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 22,
+            "name": "que estou no site Blazedemo",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 23,
+            "name": "seleciono a origem como \"Boston\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 24,
+            "name": "o destino como \"New York\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 25,
+            "name": "clico no botão \"Find Flights\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 26,
+            "name": "verifico o texto \"Flights from \"Boston\" to \"New York\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 27,
+            "name": "se a URL contem \"reserve\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 28,
+            "name": "seleciono o voo \"4346\" da compania \"Lufthansa\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 29,
+            "name": "verifico se a URL contem \"purchase\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 30,
+            "name": "preencho o nome como \"John Smith\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 31,
+            "name": "seleciono a bandeira do cartao como \"Dinner's Club\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 32,
+            "name": "marco a opcao \"Remember me\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 33,
+            "name": "clico no botao \"Pruchase Flight\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 34,
+            "name": "verifico se a url contem \"confirmation\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 35,
+            "name": "se exibe a mensagem de agredecimento \"Thank you for your purchase today!\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 36,
+            "name": "se contém a informação \"Amount\" como \"555 USD\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "compra-de-passagem",
+    "line": 2,
+    "keyword": "Funcionalidade",
+    "name": "Compra de Passagem",
+    "tags": [],
+    "uri": "features\\comprar_passagem.feature"
+  }
+]
