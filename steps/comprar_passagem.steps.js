@@ -1,9 +1,13 @@
 import { Given, When, Then, And } from "@cucumber/cucumber";
+import HomePage from "../pages/home.page";
 
 
 
 
 Given('que estou no site Blazedemo', function () {
+HomePage.page()
+HomePage.selecionar_origem()
+HomePage.selecionar_destino()
 
 });
 
