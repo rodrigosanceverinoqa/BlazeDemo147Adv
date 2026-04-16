@@ -11,20 +11,28 @@ export default class HomePage {
     }
 
     // Mapear as ações
-    async selecionar_origem(cidade_origem) {
-        await this.page.locator(this.origem).selectOption(cidade_origem)
+    async selecionar_origem(origem) {
+        await this.page.locator(this.origem).selectOption(origem)
     }
 
-    async selecionar_destino(cidade_destino) {
-        await this.page.locator(this.destino).selectOption(cidade_destino)
+    async selecionar_destino(destino) {
+        await this.page.locator(this.destino).selectOption(destino)
     }
 
     async clicar_find_flights() {
         await this.page.locator(this.btnFindFlights).click()
     }
 
+    // Jeito "Rebelde" - verificação dentro do mapeamento
     async verificar_mensagem_boas_vindas(){
-        await expect(titulo)
+        // espera o seletor do título aparecer, carregar na página
+        await this.page.waitForSelector(this.titulo)
+        // extrair o texto do título (que está no elemento) e guardar na variável
+        const titulo_pagina = await this.page.textContent(this.titulo)
+        // comparar o texto extraído com o texto esperado
+        if (!titulo_pagina.includes('Welcome to the Simple Travel Agency!') ) {
+            throw new Error('Titulo na Home ausente ou diferente do esperado')
+        }
     }
 
 }
