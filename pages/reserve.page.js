@@ -14,11 +14,22 @@ export default class ReservePage {
             + companhia }).getByRole('button').click()
     }
 
+
+    //
     async verificar_titulo(origem, destino){
         await this.page.waitForSelector(this.titulo)
         const tituloSecao = await this.page.textContent(this.titulo)
 
         if (!tituloSecao.includes(`Flights from ${origem} to ${destino}:`) ) {
+            throw new Error('Titulo da pagina Reserve ausente ou diferente do esperado')
+        }
+    }
+
+    async verificar_titulo(mensagem_origem_destino){
+        await this.page.waitForSelector(this.titulo)
+        const tituloSecao = await this.page.textContent(this.titulo)
+
+        if (!tituloSecao.includes(mensagem_origem_destino) ) {
             throw new Error('Titulo da pagina Reserve ausente ou diferente do esperado')
         }
     }
