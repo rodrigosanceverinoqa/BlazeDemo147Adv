@@ -4,9 +4,9 @@ export default class PurchasePage {
         this.page = page
         this.url = '/purchase\.php/'
         this.nome = '#inputName'
-        this.bandeira = '#cardType'
+        this.bandeira = '[name="cardType"]'
         this.remember = '#rememberMe'
-        this.btn_purchase_Flight = '.btn-primary'
+        this.btn_purchase_Flight = 'btn.btn-primary'
     }
 
     //funções
