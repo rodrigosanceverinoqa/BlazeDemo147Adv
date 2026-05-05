@@ -8,6 +8,7 @@ export default class HomePage {
         this.origem = '[name="fromPort"]'
         this.destino = '[name="toPort"]'
         this.btnFindFlights = '.btn-primary'
+        this.url = 'https://www.blazedemo.com'
     }
 
     // Mapear as ações

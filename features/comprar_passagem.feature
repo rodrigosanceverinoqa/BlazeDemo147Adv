@@ -7,7 +7,7 @@ Funcionalidade: Compra de Passagem
     E o destino como "London"
     E clico no botão
     Entao verifico o texto "Flights from São Paolo to london"
-    E se a URL contem "reserve"
+    E verifico se a URL contem "reserve"
     Quando seleciono o voo "9696" da compania "Aer Lingus"
     Entao verifico se a URL contem "purchase"
     Quando preencho o nome como "Charlie Brown"
@@ -24,7 +24,7 @@ Funcionalidade: Compra de Passagem
     E o destino como "<destino>"
     E clico no botão "Find Flights"
     Entao verifico o texto "Flights from "<origem>" to "<destino>"
-    E se a URL contem "reserve"
+    E verifico se a URL contem "reserve"
     Quando seleciono o voo "<voo>" da compania "<companhia>"
     Entao verifico se a URL contem "purchase"
     Quando preencho o nome como "<nome>"
