@@ -1,12 +1,14 @@
-import { Given, When, Then, And } from "@cucumber/cucumber"
-import HomePage from "../pages/home.page"
-import ReservePage from "../pages/reserve.page"
-import PurchasePage from "../pages/purchase.page"
-import ConfirmationPage from "../pages/confirmation.page"
-import { expect } from "@playwright/test"
+const { Given, When, Then } = require('@cucumber/cucumber')
+
+// import { Given, When, Then, And } from "@cucumber/cucumber"
+// import HomePage from "../pages/home.page"
+// import ReservePage from "../pages/reserve.page"
+// import PurchasePage from "../pages/purchase.page"
+// import ConfirmationPage from "../pages/confirmation.page"
+// import { expect } from "@playwright/test"
 
 
-Given('que estou no site Blazedemo', function ( {page} ) {
+Given('que estou no site Blazedemo', function ({ page }) {
     page.goto(HomePage.url) //abre o navegador nesta url
     HomePage.verificar_mensagem_boas_vindas() //confirma se aparece a mensagem inicial
 });
@@ -19,20 +21,20 @@ When('seleciono a origem como {string}', function (origem) {
 
 
 
-And('o destino como {string}', function (destino) {
+When('o destino como {string}', function (destino) {
     HomePage.selecionar_destino(destino)
 });
 
 
 // Versão que clica no botão a partir do texto escrito no botão
-And('clico no botão {string}', function (texto_botao) {
+When('clico no botão {string}', function (texto_botao) {
     HomePage.clicar_find_flights(texto_botao)
 });
 
 
 // Exemplo conforme o cenário simples, sem o texto "Find Flights"
 // Se for sempre clicar no botão olhando apenas o seletor
-And('clico no botão', function () {
+When('clico no botão', function () {
     // Não precisaria ter recebido parâmetro, seria somente dar a instrução de clicar
     HomePage.clicar_find_flights()
 });
@@ -50,7 +52,7 @@ Then('verifico se a URL contem {string}', function (pagina) {
 
 
 When('seleciono o voo {string} da compania {string}', function (voo, companhia) {
-   ReservePage.selecionar_voo(voo, companhia)
+    ReservePage.selecionar_voo(voo, companhia)
 });
 
 
@@ -87,7 +89,7 @@ Then('se exibe a mensagem de agredecimento {string}', function (string) {
 
 Then('se contém a informação {string} como {string}', function (quantia, preco) {
     //encontra a linha em que está escrita a quantia / "Amount"
-    const linha_preco = page.locator('tr').filter({ has: page.locator('td', {hasText: quantia })})
+    const linha_preco = page.locator('tr').filter({ has: page.locator('td', { hasText: quantia }) })
     //na linha selecionada, verifica se contém o valor/preço
     expect(linha_preco).toContainText(preco)
 });
@@ -95,6 +97,6 @@ Then('se contém a informação {string} como {string}', function (quantia, prec
 
 //Esquema de cenário - verifica a mensagem contendo as duas cidades que recebe como parâmetro
 Then('verifico o texto "Flights from {string} to {string}', function (origem, destino) {
- expect(page.locator(ReservePage.titulo)).toHaveText(`Flights from ${origem} to ${destino}:`)
+    expect(page.locator(ReservePage.titulo)).toHaveText(`Flights from ${origem} to ${destino}:`)
 });
 
