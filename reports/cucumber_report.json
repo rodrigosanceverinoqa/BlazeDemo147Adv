@@ -10,13 +10,24 @@
         "name": "Compra com Sucesso",
         "steps": [
           {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 193101200
+            }
+          },
+          {
             "arguments": [],
             "keyword": "Dado ",
             "line": 5,
             "name": "que estou no site Blazedemo",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:11"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 2246892600
             }
           },
           {
@@ -24,9 +35,12 @@
             "keyword": "Quando ",
             "line": 6,
             "name": "seleciono a origem como \"São Paolo\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:18"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 11288399
             }
           },
           {
@@ -34,39 +48,51 @@
             "keyword": "E ",
             "line": 7,
             "name": "o destino como \"London\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:24"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 7888200
             }
           },
           {
             "arguments": [],
             "keyword": "E ",
             "line": 8,
-            "name": "clico no botão \"Find Flights\"",
+            "name": "clico no botão",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:37"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 423601599
             }
           },
           {
             "arguments": [],
             "keyword": "Entao ",
             "line": 9,
-            "name": "verifico o texto \"Flights from São Paolo to london\"",
+            "name": "verifico o texto \"Flights from São Paolo to London\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:44"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 49822799
             }
           },
           {
             "arguments": [],
             "keyword": "E ",
             "line": 10,
-            "name": "se a URL contem \"reserve\"",
+            "name": "verifico se a URL contem \"reserve\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:49"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 3690200
             }
           },
           {
@@ -74,9 +100,12 @@
             "keyword": "Quando ",
             "line": 11,
             "name": "seleciono o voo \"9696\" da compania \"Aer Lingus\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:55"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 394436800
             }
           },
           {
@@ -84,9 +113,12 @@
             "keyword": "Entao ",
             "line": 12,
             "name": "verifico se a URL contem \"purchase\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:49"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 1600599
             }
           },
           {
@@ -94,9 +126,12 @@
             "keyword": "Quando ",
             "line": 13,
             "name": "preencho o nome como \"Charlie Brown\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:60"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 33436200
             }
           },
           {
@@ -104,9 +139,13 @@
             "keyword": "E ",
             "line": 14,
             "name": "seleciono a bandeira do cartao como \"Amex\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:66"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "failed",
+              "duration": 4574125000,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.blazedemo.com/\u001b[7mreserv\u001b[27me.php\u001b[7m/\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.blazedemo.com/\u001b[7mpurchas\u001b[27me.php\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"to.have.url\" with timeout 5000ms\u001b[22m\n\u001b[2m    2 × unexpected value \"https://www.blazedemo.com/reserve.php\"\u001b[22m\n\u001b[2m    - waiting for\" https://www.blazedemo.com/purchase.php\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://www.blazedemo.com/purchase.php\"\u001b[22m\n\u001b[2m    6 × unexpected value \"https://www.blazedemo.com/purchase.php\"\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at Base.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\steps\\comprar_passagem.steps.js:51:24)"
             }
           },
           {
@@ -114,8 +153,11 @@
             "keyword": "E ",
             "line": 15,
             "name": "marco a opcao \"Remember me\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:72"
+            },
             "result": {
-              "status": "undefined",
+              "status": "skipped",
               "duration": 0
             }
           },
@@ -124,8 +166,11 @@
             "keyword": "E ",
             "line": 16,
             "name": "clico no botao \"Pruchase Flight\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:79"
+            },
             "result": {
-              "status": "undefined",
+              "status": "skipped",
               "duration": 0
             }
           },
@@ -144,8 +189,11 @@
             "keyword": "E ",
             "line": 18,
             "name": "se exibe a mensagem de agredecimento \"Thank you for your purchase today!\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:85"
+            },
             "result": {
-              "status": "undefined",
+              "status": "skipped",
               "duration": 0
             }
           },
@@ -154,9 +202,21 @@
             "keyword": "E ",
             "line": 19,
             "name": "se contém a informação \"Amount\" como \"555 USD\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:91"
+            },
             "result": {
-              "status": "undefined",
+              "status": "skipped",
               "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 10863199,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.blazedemo.com/purchase.php\u001b[7m/\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.blazedemo.com/purchase.php\"\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"to.have.url\" with timeout 5000ms\u001b[22m\n\u001b[2m    8 × unexpected value \"https://www.blazedemo.com/purchase.php\"\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at Base.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\steps\\comprar_passagem.steps.js:51:24)"
             }
           }
         ],
@@ -166,18 +226,29 @@
       {
         "description": "",
         "id": "compra-de-passagem;compra-com-sucesso-ddt",
-        "keyword": "Cenario",
+        "keyword": "Esquema do Cenario",
         "line": 40,
         "name": "Compra com sucesso DDT",
         "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 196334099
+            }
+          },
           {
             "arguments": [],
             "keyword": "Dado ",
             "line": 22,
             "name": "que estou no site Blazedemo",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:11"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 1654761500
             }
           },
           {
@@ -185,9 +256,12 @@
             "keyword": "Quando ",
             "line": 23,
             "name": "seleciono a origem como \"São Paolo\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:18"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 6841800
             }
           },
           {
@@ -195,9 +269,12 @@
             "keyword": "E ",
             "line": 24,
             "name": "o destino como \"London\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:24"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 7418799
             }
           },
           {
@@ -205,9 +282,12 @@
             "keyword": "E ",
             "line": 25,
             "name": "clico no botão \"Find Flights\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:30"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 323447399
             }
           },
           {
@@ -215,19 +295,25 @@
             "keyword": "Entao ",
             "line": 26,
             "name": "verifico o texto \"Flights from \"São Paolo\" to \"London\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:100"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 27353499
             }
           },
           {
             "arguments": [],
             "keyword": "E ",
             "line": 27,
-            "name": "se a URL contem \"reserve\"",
+            "name": "verifico se a URL contem \"reserve\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:49"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 980499
             }
           },
           {
@@ -235,9 +321,12 @@
             "keyword": "Quando ",
             "line": 28,
             "name": "seleciono o voo \"9696\" da compania \"Aer Lingus\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:55"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 341181099
             }
           },
           {
@@ -245,9 +334,12 @@
             "keyword": "Entao ",
             "line": 29,
             "name": "verifico se a URL contem \"purchase\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:49"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 1788000
             }
           },
           {
@@ -255,9 +347,12 @@
             "keyword": "Quando ",
             "line": 30,
             "name": "preencho o nome como \"Charlie Brown\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:60"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 33407700
             }
           },
           {
@@ -265,9 +360,12 @@
             "keyword": "E ",
             "line": 31,
             "name": "seleciono a bandeira do cartao como \"Visa\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:66"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 10789699
             }
           },
           {
@@ -275,9 +373,12 @@
             "keyword": "E ",
             "line": 32,
             "name": "marco a opcao \"Remember me\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:72"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 37923600
             }
           },
           {
@@ -285,9 +386,13 @@
             "keyword": "E ",
             "line": 33,
             "name": "clico no botao \"Pruchase Flight\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:79"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "failed",
+              "duration": 4584794700,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.blazedemo.com/\u001b[7mreserv\u001b[27me.php\u001b[7m/\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.blazedemo.com/\u001b[7mpurchas\u001b[27me.php\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"to.have.url\" with timeout 5000ms\u001b[22m\n\u001b[2m    2 × unexpected value \"https://www.blazedemo.com/reserve.php\"\u001b[22m\n\u001b[2m    - waiting for\" https://www.blazedemo.com/purchase.php\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://www.blazedemo.com/purchase.php\"\u001b[22m\n\u001b[2m    6 × unexpected value \"https://www.blazedemo.com/purchase.php\"\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at Base.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\steps\\comprar_passagem.steps.js:51:24)"
             }
           },
           {
@@ -305,8 +410,11 @@
             "keyword": "E ",
             "line": 35,
             "name": "se exibe a mensagem de agredecimento \"Thank you for your purchase today!\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:85"
+            },
             "result": {
-              "status": "undefined",
+              "status": "skipped",
               "duration": 0
             }
           },
@@ -315,9 +423,21 @@
             "keyword": "E ",
             "line": 36,
             "name": "se contém a informação \"Amount\" como \"555 USD\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:91"
+            },
             "result": {
-              "status": "undefined",
+              "status": "skipped",
               "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 5519800,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.blazedemo.com/purchase.php\u001b[7m/\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.blazedemo.com/purchase.php\"\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"to.have.url\" with timeout 5000ms\u001b[22m\n\u001b[2m    8 × unexpected value \"https://www.blazedemo.com/purchase.php\"\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at Base.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\steps\\comprar_passagem.steps.js:51:24)"
             }
           }
         ],
@@ -327,18 +447,29 @@
       {
         "description": "",
         "id": "compra-de-passagem;compra-com-sucesso-ddt",
-        "keyword": "Cenario",
+        "keyword": "Esquema do Cenario",
         "line": 41,
         "name": "Compra com sucesso DDT",
         "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 203435199
+            }
+          },
           {
             "arguments": [],
             "keyword": "Dado ",
             "line": 22,
             "name": "que estou no site Blazedemo",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:11"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 2065955999
             }
           },
           {
@@ -346,9 +477,12 @@
             "keyword": "Quando ",
             "line": 23,
             "name": "seleciono a origem como \"Portland\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:18"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 7452800
             }
           },
           {
@@ -356,9 +490,12 @@
             "keyword": "E ",
             "line": 24,
             "name": "o destino como \"Dublin\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:24"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 7229699
             }
           },
           {
@@ -366,9 +503,12 @@
             "keyword": "E ",
             "line": 25,
             "name": "clico no botão \"Find Flights\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:30"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 317346499
             }
           },
           {
@@ -376,19 +516,25 @@
             "keyword": "Entao ",
             "line": 26,
             "name": "verifico o texto \"Flights from \"Portland\" to \"Dublin\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:100"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 37169300
             }
           },
           {
             "arguments": [],
             "keyword": "E ",
             "line": 27,
-            "name": "se a URL contem \"reserve\"",
+            "name": "verifico se a URL contem \"reserve\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:49"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 2083500
             }
           },
           {
@@ -396,9 +542,12 @@
             "keyword": "Quando ",
             "line": 28,
             "name": "seleciono o voo \"12\" da compania \"Virgin America\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:55"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 504231599
             }
           },
           {
@@ -406,9 +555,12 @@
             "keyword": "Entao ",
             "line": 29,
             "name": "verifico se a URL contem \"purchase\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:49"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 2320100
             }
           },
           {
@@ -416,9 +568,12 @@
             "keyword": "Quando ",
             "line": 30,
             "name": "preencho o nome como \"Harry Potter\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:60"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 43237799
             }
           },
           {
@@ -426,9 +581,12 @@
             "keyword": "E ",
             "line": 31,
             "name": "seleciono a bandeira do cartao como \"American Express\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:66"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 9756600
             }
           },
           {
@@ -436,9 +594,12 @@
             "keyword": "E ",
             "line": 32,
             "name": "marco a opcao \"Remember me\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:72"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 63793200
             }
           },
           {
@@ -446,9 +607,13 @@
             "keyword": "E ",
             "line": 33,
             "name": "clico no botao \"Pruchase Flight\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:79"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "failed",
+              "duration": 4391002699,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.blazedemo.com/\u001b[7mreserv\u001b[27me.php\u001b[7m/\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.blazedemo.com/\u001b[7mpurchas\u001b[27me.php\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"to.have.url\" with timeout 5000ms\u001b[22m\n\u001b[2m    2 × unexpected value \"https://www.blazedemo.com/reserve.php\"\u001b[22m\n\u001b[2m    - waiting for\" https://www.blazedemo.com/purchase.php\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://www.blazedemo.com/purchase.php\"\u001b[22m\n\u001b[2m    6 × unexpected value \"https://www.blazedemo.com/purchase.php\"\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at Base.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\steps\\comprar_passagem.steps.js:51:24)"
             }
           },
           {
@@ -466,8 +631,11 @@
             "keyword": "E ",
             "line": 35,
             "name": "se exibe a mensagem de agredecimento \"Thank you for your purchase today!\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:85"
+            },
             "result": {
-              "status": "undefined",
+              "status": "skipped",
               "duration": 0
             }
           },
@@ -476,9 +644,21 @@
             "keyword": "E ",
             "line": 36,
             "name": "se contém a informação \"Amount\" como \"555 USD\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:91"
+            },
             "result": {
-              "status": "undefined",
+              "status": "skipped",
               "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 5462999,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.blazedemo.com/purchase.php\u001b[7m/\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.blazedemo.com/purchase.php\"\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"to.have.url\" with timeout 5000ms\u001b[22m\n\u001b[2m    8 × unexpected value \"https://www.blazedemo.com/purchase.php\"\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at Base.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\steps\\comprar_passagem.steps.js:51:24)"
             }
           }
         ],
@@ -488,18 +668,29 @@
       {
         "description": "",
         "id": "compra-de-passagem;compra-com-sucesso-ddt",
-        "keyword": "Cenario",
+        "keyword": "Esquema do Cenario",
         "line": 42,
         "name": "Compra com sucesso DDT",
         "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 314567700
+            }
+          },
           {
             "arguments": [],
             "keyword": "Dado ",
             "line": 22,
             "name": "que estou no site Blazedemo",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:11"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 1140888299
             }
           },
           {
@@ -507,9 +698,12 @@
             "keyword": "Quando ",
             "line": 23,
             "name": "seleciono a origem como \"Boston\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:18"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 6824799
             }
           },
           {
@@ -517,9 +711,12 @@
             "keyword": "E ",
             "line": 24,
             "name": "o destino como \"New York\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:24"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 6039500
             }
           },
           {
@@ -527,9 +724,12 @@
             "keyword": "E ",
             "line": 25,
             "name": "clico no botão \"Find Flights\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:30"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 310072899
             }
           },
           {
@@ -537,19 +737,25 @@
             "keyword": "Entao ",
             "line": 26,
             "name": "verifico o texto \"Flights from \"Boston\" to \"New York\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:100"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 40522200
             }
           },
           {
             "arguments": [],
             "keyword": "E ",
             "line": 27,
-            "name": "se a URL contem \"reserve\"",
+            "name": "verifico se a URL contem \"reserve\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:49"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 1279700
             }
           },
           {
@@ -557,9 +763,12 @@
             "keyword": "Quando ",
             "line": 28,
             "name": "seleciono o voo \"4346\" da compania \"Lufthansa\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:55"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 315828499
             }
           },
           {
@@ -567,9 +776,12 @@
             "keyword": "Entao ",
             "line": 29,
             "name": "verifico se a URL contem \"purchase\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:49"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 1298199
             }
           },
           {
@@ -577,9 +789,12 @@
             "keyword": "Quando ",
             "line": 30,
             "name": "preencho o nome como \"John Smith\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:60"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 44039700
             }
           },
           {
@@ -587,9 +802,13 @@
             "keyword": "E ",
             "line": 31,
             "name": "seleciono a bandeira do cartao como \"Dinner's Club\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:66"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "failed",
+              "duration": 4646336400,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.blazedemo.com/\u001b[7mreserv\u001b[27me.php\u001b[7m/\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.blazedemo.com/\u001b[7mpurchas\u001b[27me.php\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"to.have.url\" with timeout 5000ms\u001b[22m\n\u001b[2m    2 × unexpected value \"https://www.blazedemo.com/reserve.php\"\u001b[22m\n\u001b[2m    - waiting for\" https://www.blazedemo.com/purchase.php\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://www.blazedemo.com/purchase.php\"\u001b[22m\n\u001b[2m    6 × unexpected value \"https://www.blazedemo.com/purchase.php\"\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at Base.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\steps\\comprar_passagem.steps.js:51:24)"
             }
           },
           {
@@ -597,8 +816,11 @@
             "keyword": "E ",
             "line": 32,
             "name": "marco a opcao \"Remember me\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:72"
+            },
             "result": {
-              "status": "undefined",
+              "status": "skipped",
               "duration": 0
             }
           },
@@ -607,8 +829,11 @@
             "keyword": "E ",
             "line": 33,
             "name": "clico no botao \"Pruchase Flight\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:79"
+            },
             "result": {
-              "status": "undefined",
+              "status": "skipped",
               "duration": 0
             }
           },
@@ -627,8 +852,11 @@
             "keyword": "E ",
             "line": 35,
             "name": "se exibe a mensagem de agredecimento \"Thank you for your purchase today!\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:85"
+            },
             "result": {
-              "status": "undefined",
+              "status": "skipped",
               "duration": 0
             }
           },
@@ -637,9 +865,21 @@
             "keyword": "E ",
             "line": 36,
             "name": "se contém a informação \"Amount\" como \"555 USD\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:91"
+            },
             "result": {
-              "status": "undefined",
+              "status": "skipped",
               "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 5383200,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.blazedemo.com/purchase.php\u001b[7m/\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.blazedemo.com/purchase.php\"\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"to.have.url\" with timeout 5000ms\u001b[22m\n\u001b[2m    8 × unexpected value \"https://www.blazedemo.com/purchase.php\"\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at Base.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\steps\\comprar_passagem.steps.js:51:24)"
             }
           }
         ],

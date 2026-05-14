@@ -1,4 +1,4 @@
-import { expect } from "@playwright/test"
+//import { expect } from "@playwright/test"
 
 //export default class HomePage { // padrão para type = module
 class HomePage {              // padrão para type = commonjs

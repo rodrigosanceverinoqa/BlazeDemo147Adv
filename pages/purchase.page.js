@@ -1,5 +1,5 @@
-export default class PurchasePage {
-
+//export default class PurchasePage {
+    class PurchasePage{
     constructor(page) {
         this.page = page
         this.url = '/purchase\.php/'
@@ -31,3 +31,5 @@ export default class PurchasePage {
 
 
 }
+
+module.exports = PurchasePage

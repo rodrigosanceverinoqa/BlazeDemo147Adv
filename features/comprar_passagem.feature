@@ -6,7 +6,7 @@ Funcionalidade: Compra de Passagem
     Quando seleciono a origem como "São Paolo"
     E o destino como "London"
     E clico no botão
-    Entao verifico o texto "Flights from São Paolo to london"
+    Entao verifico o texto "Flights from São Paolo to London"
     E verifico se a URL contem "reserve"
     Quando seleciono o voo "9696" da compania "Aer Lingus"
     Entao verifico se a URL contem "purchase"

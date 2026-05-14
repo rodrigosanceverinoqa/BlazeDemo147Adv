@@ -1,4 +1,4 @@
-const { setBaseConstructor } = require('@cucumber/cucumber')
+const { setWorldConstructor } = require('@cucumber/cucumber')
 const { chromium, firefox, webkit} = require('@playwright/test')
 const HomePage = require('../pages/home.page')
 const ReservePage = require('../pages/reserve.page')
@@ -10,7 +10,7 @@ class Base{
         const browser_name = process.env.BROWSER || 'chromium'
         const browsers = {chromium, firefox, webkit}
         this.browser = await browsers[browser_name].launch({ headless: process.env.HEADLESS !== 'false'})
-        this.context = await this.browser.newContent({ baseURL: 'https://www.blazedemo.com'})
+        this.context = await this.browser.newContext({ baseURL: 'https://www.blazedemo.com'})
         this.page = await this.context.newPage()
 
         this.homePage = new HomePage(this.page)
@@ -27,4 +27,4 @@ class Base{
     
 }
 
-setBaseConstructor(Base)
+setWorldConstructor(Base)
