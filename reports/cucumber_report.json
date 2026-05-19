@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 193101200
+              "duration": 209881599
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2246892600
+              "duration": 1574090099
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11288399
+              "duration": 9922299
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7888200
+              "duration": 9136600
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 423601599
+              "duration": 841694499
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 49822799
+              "duration": 43579699
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3690200
+              "duration": 4433300
             }
           },
           {
@@ -101,11 +101,11 @@
             "line": 11,
             "name": "seleciono o voo \"9696\" da compania \"Aer Lingus\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:55"
+              "location": "steps\\comprar_passagem.steps.js:56"
             },
             "result": {
               "status": "passed",
-              "duration": 394436800
+              "duration": 329365600
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1600599
+              "duration": 1186299
             }
           },
           {
@@ -127,25 +127,24 @@
             "line": 13,
             "name": "preencho o nome como \"Charlie Brown\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:60"
+              "location": "steps\\comprar_passagem.steps.js:61"
             },
             "result": {
               "status": "passed",
-              "duration": 33436200
+              "duration": 30604200
             }
           },
           {
             "arguments": [],
             "keyword": "E ",
             "line": 14,
-            "name": "seleciono a bandeira do cartao como \"Amex\"",
+            "name": "seleciono a bandeira do cartao como \"Visa\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:66"
+              "location": "steps\\comprar_passagem.steps.js:67"
             },
             "result": {
-              "status": "failed",
-              "duration": 4574125000,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.blazedemo.com/\u001b[7mreserv\u001b[27me.php\u001b[7m/\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.blazedemo.com/\u001b[7mpurchas\u001b[27me.php\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"to.have.url\" with timeout 5000ms\u001b[22m\n\u001b[2m    2 × unexpected value \"https://www.blazedemo.com/reserve.php\"\u001b[22m\n\u001b[2m    - waiting for\" https://www.blazedemo.com/purchase.php\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://www.blazedemo.com/purchase.php\"\u001b[22m\n\u001b[2m    6 × unexpected value \"https://www.blazedemo.com/purchase.php\"\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at Base.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\steps\\comprar_passagem.steps.js:51:24)"
+              "status": "passed",
+              "duration": 8780099
             }
           },
           {
@@ -154,11 +153,11 @@
             "line": 15,
             "name": "marco a opcao \"Remember me\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:72"
+              "location": "steps\\comprar_passagem.steps.js:73"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 37633499
             }
           },
           {
@@ -167,21 +166,24 @@
             "line": 16,
             "name": "clico no botao \"Pruchase Flight\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:79"
+              "location": "steps\\comprar_passagem.steps.js:80"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 409026899
             }
           },
           {
             "arguments": [],
             "keyword": "Entao ",
             "line": 17,
-            "name": "verifico se a url contem \"confirmation\"",
+            "name": "verifico se a URL contem \"confirmation\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:49"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 1741700
             }
           },
           {
@@ -190,11 +192,11 @@
             "line": 18,
             "name": "se exibe a mensagem de agredecimento \"Thank you for your purchase today!\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:85"
+              "location": "steps\\comprar_passagem.steps.js:86"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 39243400
             }
           },
           {
@@ -203,20 +205,19 @@
             "line": 19,
             "name": "se contém a informação \"Amount\" como \"555 USD\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:91"
+              "location": "steps\\comprar_passagem.steps.js:92"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 5712000
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 10863199,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.blazedemo.com/purchase.php\u001b[7m/\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.blazedemo.com/purchase.php\"\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"to.have.url\" with timeout 5000ms\u001b[22m\n\u001b[2m    8 × unexpected value \"https://www.blazedemo.com/purchase.php\"\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at Base.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\steps\\comprar_passagem.steps.js:51:24)"
+              "status": "passed",
+              "duration": 8196299
             }
           }
         ],
@@ -235,7 +236,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 196334099
+              "duration": 200181899
             }
           },
           {
@@ -248,7 +249,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1654761500
+              "duration": 1274083599
             }
           },
           {
@@ -261,7 +262,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6841800
+              "duration": 7581700
             }
           },
           {
@@ -274,7 +275,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7418799
+              "duration": 6776100
             }
           },
           {
@@ -287,7 +288,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 323447399
+              "duration": 348137500
             }
           },
           {
@@ -296,11 +297,11 @@
             "line": 26,
             "name": "verifico o texto \"Flights from \"São Paolo\" to \"London\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:100"
+              "location": "steps\\comprar_passagem.steps.js:101"
             },
             "result": {
               "status": "passed",
-              "duration": 27353499
+              "duration": 35292999
             }
           },
           {
@@ -313,7 +314,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 980499
+              "duration": 1193100
             }
           },
           {
@@ -322,11 +323,11 @@
             "line": 28,
             "name": "seleciono o voo \"9696\" da compania \"Aer Lingus\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:55"
+              "location": "steps\\comprar_passagem.steps.js:56"
             },
             "result": {
               "status": "passed",
-              "duration": 341181099
+              "duration": 1389902600
             }
           },
           {
@@ -339,7 +340,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1788000
+              "duration": 1613199
             }
           },
           {
@@ -348,11 +349,11 @@
             "line": 30,
             "name": "preencho o nome como \"Charlie Brown\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:60"
+              "location": "steps\\comprar_passagem.steps.js:61"
             },
             "result": {
               "status": "passed",
-              "duration": 33407700
+              "duration": 33002400
             }
           },
           {
@@ -361,11 +362,11 @@
             "line": 31,
             "name": "seleciono a bandeira do cartao como \"Visa\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:66"
+              "location": "steps\\comprar_passagem.steps.js:67"
             },
             "result": {
               "status": "passed",
-              "duration": 10789699
+              "duration": 6362400
             }
           },
           {
@@ -374,11 +375,11 @@
             "line": 32,
             "name": "marco a opcao \"Remember me\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:72"
+              "location": "steps\\comprar_passagem.steps.js:73"
             },
             "result": {
               "status": "passed",
-              "duration": 37923600
+              "duration": 40407100
             }
           },
           {
@@ -387,22 +388,24 @@
             "line": 33,
             "name": "clico no botao \"Pruchase Flight\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:79"
+              "location": "steps\\comprar_passagem.steps.js:80"
             },
             "result": {
-              "status": "failed",
-              "duration": 4584794700,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.blazedemo.com/\u001b[7mreserv\u001b[27me.php\u001b[7m/\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.blazedemo.com/\u001b[7mpurchas\u001b[27me.php\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"to.have.url\" with timeout 5000ms\u001b[22m\n\u001b[2m    2 × unexpected value \"https://www.blazedemo.com/reserve.php\"\u001b[22m\n\u001b[2m    - waiting for\" https://www.blazedemo.com/purchase.php\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://www.blazedemo.com/purchase.php\"\u001b[22m\n\u001b[2m    6 × unexpected value \"https://www.blazedemo.com/purchase.php\"\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at Base.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\steps\\comprar_passagem.steps.js:51:24)"
+              "status": "passed",
+              "duration": 325521999
             }
           },
           {
             "arguments": [],
             "keyword": "Entao ",
             "line": 34,
-            "name": "verifico se a url contem \"confirmation\"",
+            "name": "verifico se a URL contem \"confirmation\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:49"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 1637699
             }
           },
           {
@@ -411,11 +414,11 @@
             "line": 35,
             "name": "se exibe a mensagem de agredecimento \"Thank you for your purchase today!\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:85"
+              "location": "steps\\comprar_passagem.steps.js:86"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 37212600
             }
           },
           {
@@ -424,20 +427,19 @@
             "line": 36,
             "name": "se contém a informação \"Amount\" como \"555 USD\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:91"
+              "location": "steps\\comprar_passagem.steps.js:92"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 3718599
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 5519800,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.blazedemo.com/purchase.php\u001b[7m/\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.blazedemo.com/purchase.php\"\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"to.have.url\" with timeout 5000ms\u001b[22m\n\u001b[2m    8 × unexpected value \"https://www.blazedemo.com/purchase.php\"\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at Base.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\steps\\comprar_passagem.steps.js:51:24)"
+              "status": "passed",
+              "duration": 4888999
             }
           }
         ],
@@ -456,7 +458,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 203435199
+              "duration": 202750600
             }
           },
           {
@@ -469,7 +471,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2065955999
+              "duration": 2611064400
             }
           },
           {
@@ -482,7 +484,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7452800
+              "duration": 7378899
             }
           },
           {
@@ -495,7 +497,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7229699
+              "duration": 5636300
             }
           },
           {
@@ -508,7 +510,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 317346499
+              "duration": 441901799
             }
           },
           {
@@ -517,11 +519,11 @@
             "line": 26,
             "name": "verifico o texto \"Flights from \"Portland\" to \"Dublin\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:100"
+              "location": "steps\\comprar_passagem.steps.js:101"
             },
             "result": {
               "status": "passed",
-              "duration": 37169300
+              "duration": 36223699
             }
           },
           {
@@ -534,7 +536,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2083500
+              "duration": 709600
             }
           },
           {
@@ -543,11 +545,11 @@
             "line": 28,
             "name": "seleciono o voo \"12\" da compania \"Virgin America\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:55"
+              "location": "steps\\comprar_passagem.steps.js:56"
             },
             "result": {
               "status": "passed",
-              "duration": 504231599
+              "duration": 390003300
             }
           },
           {
@@ -560,7 +562,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2320100
+              "duration": 2085199
             }
           },
           {
@@ -569,11 +571,11 @@
             "line": 30,
             "name": "preencho o nome como \"Harry Potter\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:60"
+              "location": "steps\\comprar_passagem.steps.js:61"
             },
             "result": {
               "status": "passed",
-              "duration": 43237799
+              "duration": 35771799
             }
           },
           {
@@ -582,11 +584,11 @@
             "line": 31,
             "name": "seleciono a bandeira do cartao como \"American Express\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:66"
+              "location": "steps\\comprar_passagem.steps.js:67"
             },
             "result": {
               "status": "passed",
-              "duration": 9756600
+              "duration": 5954499
             }
           },
           {
@@ -595,11 +597,11 @@
             "line": 32,
             "name": "marco a opcao \"Remember me\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:72"
+              "location": "steps\\comprar_passagem.steps.js:73"
             },
             "result": {
               "status": "passed",
-              "duration": 63793200
+              "duration": 54471700
             }
           },
           {
@@ -608,22 +610,24 @@
             "line": 33,
             "name": "clico no botao \"Pruchase Flight\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:79"
+              "location": "steps\\comprar_passagem.steps.js:80"
             },
             "result": {
-              "status": "failed",
-              "duration": 4391002699,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.blazedemo.com/\u001b[7mreserv\u001b[27me.php\u001b[7m/\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.blazedemo.com/\u001b[7mpurchas\u001b[27me.php\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"to.have.url\" with timeout 5000ms\u001b[22m\n\u001b[2m    2 × unexpected value \"https://www.blazedemo.com/reserve.php\"\u001b[22m\n\u001b[2m    - waiting for\" https://www.blazedemo.com/purchase.php\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://www.blazedemo.com/purchase.php\"\u001b[22m\n\u001b[2m    6 × unexpected value \"https://www.blazedemo.com/purchase.php\"\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at Base.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\steps\\comprar_passagem.steps.js:51:24)"
+              "status": "passed",
+              "duration": 980079799
             }
           },
           {
             "arguments": [],
             "keyword": "Entao ",
             "line": 34,
-            "name": "verifico se a url contem \"confirmation\"",
+            "name": "verifico se a URL contem \"confirmation\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:49"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 1779599
             }
           },
           {
@@ -632,11 +636,11 @@
             "line": 35,
             "name": "se exibe a mensagem de agredecimento \"Thank you for your purchase today!\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:85"
+              "location": "steps\\comprar_passagem.steps.js:86"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 44077300
             }
           },
           {
@@ -645,20 +649,19 @@
             "line": 36,
             "name": "se contém a informação \"Amount\" como \"555 USD\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:91"
+              "location": "steps\\comprar_passagem.steps.js:92"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 3890999
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 5462999,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.blazedemo.com/purchase.php\u001b[7m/\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.blazedemo.com/purchase.php\"\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"to.have.url\" with timeout 5000ms\u001b[22m\n\u001b[2m    8 × unexpected value \"https://www.blazedemo.com/purchase.php\"\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at Base.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\steps\\comprar_passagem.steps.js:51:24)"
+              "status": "passed",
+              "duration": 4817900
             }
           }
         ],
@@ -677,7 +680,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 314567700
+              "duration": 245765800
             }
           },
           {
@@ -690,7 +693,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1140888299
+              "duration": 3105003400
             }
           },
           {
@@ -703,7 +706,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6824799
+              "duration": 8658699
             }
           },
           {
@@ -716,7 +719,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6039500
+              "duration": 9847200
             }
           },
           {
@@ -729,7 +732,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 310072899
+              "duration": 506569800
             }
           },
           {
@@ -738,11 +741,11 @@
             "line": 26,
             "name": "verifico o texto \"Flights from \"Boston\" to \"New York\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:100"
+              "location": "steps\\comprar_passagem.steps.js:101"
             },
             "result": {
               "status": "passed",
-              "duration": 40522200
+              "duration": 34795600
             }
           },
           {
@@ -755,7 +758,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1279700
+              "duration": 894800
             }
           },
           {
@@ -764,11 +767,11 @@
             "line": 28,
             "name": "seleciono o voo \"4346\" da compania \"Lufthansa\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:55"
+              "location": "steps\\comprar_passagem.steps.js:56"
             },
             "result": {
               "status": "passed",
-              "duration": 315828499
+              "duration": 2254438799
             }
           },
           {
@@ -781,7 +784,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1298199
+              "duration": 1497599
             }
           },
           {
@@ -790,25 +793,24 @@
             "line": 30,
             "name": "preencho o nome como \"John Smith\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:60"
+              "location": "steps\\comprar_passagem.steps.js:61"
             },
             "result": {
               "status": "passed",
-              "duration": 44039700
+              "duration": 35177200
             }
           },
           {
             "arguments": [],
             "keyword": "E ",
             "line": 31,
-            "name": "seleciono a bandeira do cartao como \"Dinner's Club\"",
+            "name": "seleciono a bandeira do cartao como \"Diner's Club\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:66"
+              "location": "steps\\comprar_passagem.steps.js:67"
             },
             "result": {
-              "status": "failed",
-              "duration": 4646336400,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.blazedemo.com/\u001b[7mreserv\u001b[27me.php\u001b[7m/\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.blazedemo.com/\u001b[7mpurchas\u001b[27me.php\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"to.have.url\" with timeout 5000ms\u001b[22m\n\u001b[2m    2 × unexpected value \"https://www.blazedemo.com/reserve.php\"\u001b[22m\n\u001b[2m    - waiting for\" https://www.blazedemo.com/purchase.php\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://www.blazedemo.com/purchase.php\"\u001b[22m\n\u001b[2m    6 × unexpected value \"https://www.blazedemo.com/purchase.php\"\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at Base.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\steps\\comprar_passagem.steps.js:51:24)"
+              "status": "passed",
+              "duration": 5101100
             }
           },
           {
@@ -817,11 +819,11 @@
             "line": 32,
             "name": "marco a opcao \"Remember me\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:72"
+              "location": "steps\\comprar_passagem.steps.js:73"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 46737799
             }
           },
           {
@@ -830,21 +832,24 @@
             "line": 33,
             "name": "clico no botao \"Pruchase Flight\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:79"
+              "location": "steps\\comprar_passagem.steps.js:80"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 322251899
             }
           },
           {
             "arguments": [],
             "keyword": "Entao ",
             "line": 34,
-            "name": "verifico se a url contem \"confirmation\"",
+            "name": "verifico se a URL contem \"confirmation\"",
+            "match": {
+              "location": "steps\\comprar_passagem.steps.js:49"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 1364600
             }
           },
           {
@@ -853,11 +858,11 @@
             "line": 35,
             "name": "se exibe a mensagem de agredecimento \"Thank you for your purchase today!\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:85"
+              "location": "steps\\comprar_passagem.steps.js:86"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 38247400
             }
           },
           {
@@ -866,20 +871,19 @@
             "line": 36,
             "name": "se contém a informação \"Amount\" como \"555 USD\"",
             "match": {
-              "location": "steps\\comprar_passagem.steps.js:91"
+              "location": "steps\\comprar_passagem.steps.js:92"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 3777699
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 5383200,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.blazedemo.com/purchase.php\u001b[7m/\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.blazedemo.com/purchase.php\"\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"to.have.url\" with timeout 5000ms\u001b[22m\n\u001b[2m    8 × unexpected value \"https://www.blazedemo.com/purchase.php\"\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at Base.<anonymous> (C:\\Iterasys\\BlazeDemo147Adv\\steps\\comprar_passagem.steps.js:51:24)"
+              "status": "passed",
+              "duration": 4269199
             }
           }
         ],

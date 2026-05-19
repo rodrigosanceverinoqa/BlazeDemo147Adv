@@ -11,10 +11,10 @@ Funcionalidade: Compra de Passagem
     Quando seleciono o voo "9696" da compania "Aer Lingus"
     Entao verifico se a URL contem "purchase"
     Quando preencho o nome como "Charlie Brown"
-    E seleciono a bandeira do cartao como "Amex"
+    E seleciono a bandeira do cartao como "Visa"
     E marco a opcao "Remember me"
     E clico no botao "Pruchase Flight"
-    Entao verifico se a url contem "confirmation"
+    Entao verifico se a URL contem "confirmation"
     E se exibe a mensagem de agredecimento "Thank you for your purchase today!"
     E se contém a informação "Amount" como "555 USD"
 
@@ -31,7 +31,7 @@ Funcionalidade: Compra de Passagem
     E seleciono a bandeira do cartao como "<bandeira>"
     E marco a opcao "Remember me"
     E clico no botao "Pruchase Flight"
-    Entao verifico se a url contem "confirmation"
+    Entao verifico se a URL contem "confirmation"
     E se exibe a mensagem de agredecimento "Thank you for your purchase today!"
     E se contém a informação "Amount" como "<preco>"
 
@@ -39,4 +39,4 @@ Funcionalidade: Compra de Passagem
       | origem    | destino  | voo  | companhia      | nome          | bandeira         | preco   |
       | São Paolo | London   | 9696 | Aer Lingus     | Charlie Brown | Visa             | 555 USD |
       | Portland  | Dublin   |   12 | Virgin America | Harry Potter  | American Express | 555 USD |
-      | Boston    | New York | 4346 | Lufthansa      | John Smith    | Dinner's Club    | 555 USD |
+      | Boston    | New York | 4346 | Lufthansa      | John Smith    | Diner's Club     | 555 USD |

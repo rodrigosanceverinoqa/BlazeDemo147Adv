@@ -55,3 +55,15 @@ Depencias removidas:
 Diferenças de sintaxe conforme o type definido no package.json
 - commonjs --> quer que você use const ... = require('...')
 - module --> quer que você faça import ... from ...
+
+Sobre execução sincrona _ uma parte espera a outra / Ex. do telefone (existe uma promessa).
+Sobre execução assincrona _ a parte que começa a conversa (emissora) não espera, continua fazendo outras coisas / Ex. da mensagem no whatsapp.
+
+Sem async await _ é uma transação síncrona
+Com async await _ é uma transação assincrona
+
+Estamos usando dois frameworks:
+1. Playwright _ controla o browser --> timeout - mensagem específica que pode explicar a causa
+2. CucumberJS _ organização        --> timeout - mensagem genérica que não vai explicar a causa
+
+Situação da aula: funcionava sem await e não funcionava com await

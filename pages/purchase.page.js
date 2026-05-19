@@ -6,7 +6,7 @@
         this.nome = '#inputName'
         this.bandeira = '[name="cardType"]'
         this.remember = '#rememberMe'
-        this.btn_purchase_Flight = 'btn.btn-primary'
+        this.btn_purchase_Flight = '.btn.btn-primary'
     }
 
     //funções

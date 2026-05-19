@@ -48,7 +48,8 @@ Then('verifico o texto {string}', async function (mensagem_origem_destino) {
 
 Then('verifico se a URL contem {string}', async function (pagina) {
     //await page.wait_for_load_state("networkidle")
-     expect(this.page).toHaveURL(`/${pagina}\.php/`)
+     //expect(this.page).toHaveURL(`/${pagina}\.php/`)
+     expect(this.page).toHaveURL(new RegExp(`${pagina}\\.php/?`))
 });
 
 
@@ -77,7 +78,7 @@ When('marco a opcao {string}', async function (string) {
 
 
 When('clico no botao {string}', async function (string) {
-    await this.purchasePage.comprar_passagens()
+   await this.purchasePage.comprar_passagens()
 });
 
 
