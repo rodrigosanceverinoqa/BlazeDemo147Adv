@@ -21,15 +21,12 @@ class HomePage {              // padrão para type = commonjs
         await this.page.locator(this.destino).selectOption(destino)
     }
 
-    //Este seria para o exemplo sem parâmetro
+    //Este seria para o exemplo sem parâmetro --  é usado na home / no cenário simples
     async clicar_find_flights() {
         await this.page.locator(this.btnFindFlights).click()
     }
 
-    //Este seria para o exemplo com parâmetro (texto no botão)
-    async clicar_find_flights(texto_botao) {
-        await this.page.getByRole('button', { name: texto_botao }).click()
-    }
+
 
     // Jeito "Rebelde" - verificação dentro do mapeamento
     async verificar_mensagem_boas_vindas() {

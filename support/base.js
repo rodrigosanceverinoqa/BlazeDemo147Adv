@@ -24,6 +24,11 @@ class Base{
         if(this.browser) await this.context.close()
         
     }
+
+        //Este seria para o exemplo com parâmetro (texto no botão) --  é usado na purchase (cenário simples) e na home e na purchase (cenário DDT)
+    async clicar_botao(texto_botao) {
+        await this.page.getByRole('button', { name: texto_botao }).click()
+    }
     
 }
 
